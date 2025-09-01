@@ -21,6 +21,15 @@ const portfolioData = [
     desc: "Brand awareness campaign",
     img: "assets/images/banners/banner-6.webp",
   },
+  {
+    id: 19,
+    category: "banners",
+    title: "Corporate Banner",
+    desc: "Brand awareness campaign",
+    img: "assets/images/banners/banner-1.webp",
+  },
+
+
 
   // Posters
   {

@@ -1,25 +1,38 @@
-import { useState, useEffect } from "react";
+import React, { useState, useEffect } from "react";
+import "../assets/css/BackToTop.css";
 
-export default function BackToTop() {
+const BackToTop = () => {
   const [visible, setVisible] = useState(false);
 
   useEffect(() => {
     const toggleVisibility = () => {
-      setVisible(window.scrollY > 300);
+      if (window.scrollY > 500) {
+        setVisible(true);
+      } else {
+        setVisible(false);
+      }
     };
+
     window.addEventListener("scroll", toggleVisibility);
     return () => window.removeEventListener("scroll", toggleVisibility);
   }, []);
 
   const scrollToTop = () => {
-    window.scrollTo({ top: 0, behavior: "smooth" });
+    window.scrollTo({
+      top: 0,
+      behavior: "smooth",
+    });
   };
 
   return (
-    visible && (
-      <button className="back-to-top" onClick={scrollToTop}>
-        ↑
-      </button>
-    )
+    <button
+      className={`back-to-top ${visible ? "visible" : ""}`}
+      onClick={scrollToTop}
+      aria-label="Back to Top"
+    >
+      ↑
+    </button>
   );
-}
+};
+
+export default BackToTop;

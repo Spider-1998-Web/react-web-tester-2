@@ -9,7 +9,7 @@ import Portfolio from "./components/Portfolio";
 import About from "./components/About";
 import Contact from "./components/Contact";
 import Footer from "./components/Footer";
-
+import BackToTop from "./components/BackToTop";
 function App() {
   useEffect(() => {
     AOS.init({ duration: 1000 });
@@ -20,10 +20,14 @@ function App() {
       <Navbar />
       <Hero />
       <Services />
-      <Portfolio  />
+      <Portfolio />
       <About />
       <Contact />
       <Footer />
+      <BackToTop />
+
+
+
     </>
   );
 }
