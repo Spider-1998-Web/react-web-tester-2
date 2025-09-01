@@ -11,7 +11,7 @@ const Navbar = () => {
   return (
     <nav className="navbar">
       <div className="nav-container">
-        <div className="logo">Spotlight</div>
+        <div className="logo">Spotlight Ads</div>
 
         {/* Hamburger */}
         <div className={`menu-toggle ${isOpen ? "open" : ""}`} onClick={toggleMenu}>
