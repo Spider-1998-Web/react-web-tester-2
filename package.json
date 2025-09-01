@@ -3,7 +3,7 @@
   "private": true,
   "version": "0.0.0",
   "type": "module",
-  "homepage": "https://github.com/Spider-1998-Web/react-web-tester-2.git",
+  "homepage": "https://github.com/Spider-1998-Web/react-web-tester-2",
   "scripts": {
     "dev": "vite",
     "build": "vite build",
